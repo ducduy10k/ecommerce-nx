@@ -1,8 +1,8 @@
 export default {
-  displayName: 'n2d-encommerce',
+  displayName: 'n2d-ecommerce',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/n2d-encommerce',
+  coverageDirectory: '../../coverage/apps/n2d-ecommerce',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

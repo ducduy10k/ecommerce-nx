@@ -1,32 +1,32 @@
 {
-  "name": "n2d-encommerce",
+  "name": "n2d-ecommerce",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/n2d-encommerce/src",
+  "sourceRoot": "apps/n2d-ecommerce/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/n2d-encommerce",
-        "index": "apps/n2d-encommerce/src/index.html",
-        "browser": "apps/n2d-encommerce/src/main.ts",
+        "outputPath": "dist/apps/n2d-ecommerce",
+        "index": "apps/n2d-ecommerce/src/index.html",
+        "browser": "apps/n2d-ecommerce/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/n2d-encommerce/tsconfig.app.json",
+        "tsConfig": "apps/n2d-ecommerce/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/n2d-encommerce/public"
+            "input": "apps/n2d-ecommerce/public"
           }
         ],
-        "styles": ["apps/n2d-encommerce/src/styles.scss"],
+        "styles": ["apps/n2d-ecommerce/src/styles.scss"],
         "scripts": [],
-        "server": "apps/n2d-encommerce/src/main.server.ts",
+        "server": "apps/n2d-ecommerce/src/main.server.ts",
         "ssr": {
-          "entry": "apps/n2d-encommerce/src/server.ts"
+          "entry": "apps/n2d-ecommerce/src/server.ts"
         },
         "outputMode": "server"
       },
@@ -58,10 +58,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "n2d-encommerce:build:production"
+          "buildTarget": "n2d-ecommerce:build:production"
         },
         "development": {
-          "buildTarget": "n2d-encommerce:build:development"
+          "buildTarget": "n2d-ecommerce:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "n2d-encommerce:build"
+        "buildTarget": "n2d-ecommerce:build"
       }
     },
     "lint": {
@@ -79,14 +79,14 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/n2d-encommerce/jest.config.ts"
+        "jestConfig": "apps/n2d-ecommerce/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "n2d-encommerce:build",
-        "staticFilePath": "dist/apps/n2d-encommerce/browser",
+        "buildTarget": "n2d-ecommerce:build",
+        "staticFilePath": "dist/apps/n2d-ecommerce/browser",
         "spa": true
       }
     }
