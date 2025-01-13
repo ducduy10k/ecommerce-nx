@@ -11,3 +11,17 @@ npm add --global nx@latest
 nx g @nx/angular:setup-tailwind (app-name) 
 ```
 eg: nx g @nx/angular:setup-tailwind n2d-ecommerce
+
+### UI
+```
+npm i -D daisyui@latest
+```
+
+### Typography
+```
+npm install -D @tailwindcss/typography
+```
+### Icon
+```
+npm i --save @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons
+```

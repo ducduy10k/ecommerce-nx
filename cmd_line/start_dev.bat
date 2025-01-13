@@ -1,0 +1,1 @@
+nx serve n2d-ecommerce 
