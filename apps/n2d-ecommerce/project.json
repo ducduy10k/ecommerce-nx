@@ -2,7 +2,7 @@
   "name": "n2d-ecommerce",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "de",
   "sourceRoot": "apps/n2d-ecommerce/src",
   "tags": [],
   "targets": {

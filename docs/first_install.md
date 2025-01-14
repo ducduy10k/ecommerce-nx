@@ -25,3 +25,5 @@ npm install -D @tailwindcss/typography
 ```
 npm i --save @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons
 ```
+
+npm install @fortawesome/angular-fontawesome
