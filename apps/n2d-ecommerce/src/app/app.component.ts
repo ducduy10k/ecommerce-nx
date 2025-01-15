@@ -1,10 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FaConfig, FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { fontAwsomeIcons } from './shared/font_awsome_icons';
+import { fontAwesomeIcons } from './shared/font_awsome_icons';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @Component({
-  imports: [RouterModule, FontAwesomeModule],
+  imports: [RouterModule, FontAwesomeModule, NavbarComponent, FooterComponent],
   selector: 'de-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -21,6 +23,6 @@ export class AppComponent implements OnInit{
 
   private initFontAwsome() {
     this.faConfig.defaultPrefix = 'far';
-    this.faIconLibrary.addIcons(...fontAwsomeIcons);
+    this.faIconLibrary.addIcons(...fontAwesomeIcons);
   }
 }
