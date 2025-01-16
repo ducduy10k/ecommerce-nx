@@ -27,3 +27,13 @@ npm i --save @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icon
 ```
 
 npm install @fortawesome/angular-fontawesome
+
+### ngxtension
+
+npm install ngxtension
+
+### other
+npm i @tanstack/angular-query-experimental
+npm i @tanstack/angular-query-devtools-experimental
+
+npm i @ng-web-apis/common @ng-web-apis/universal 
