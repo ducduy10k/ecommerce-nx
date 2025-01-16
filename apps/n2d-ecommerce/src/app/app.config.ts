@@ -15,5 +15,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(appRoutes),
     // provideHttpClient(withFetch(), withInterceptors([authInterceptor])),
     provideQueryClient(new QueryClient()),
+    provideHttpClient()
   ],
 };
